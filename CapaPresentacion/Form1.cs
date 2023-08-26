@@ -105,5 +105,67 @@ namespace CapaPresentacion
             }
         }
 
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            /*
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "Stock")
+            {
+                if (e.Value != null)
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+                        //Stock menor a 20
+                        if (Convert.ToInt32(e.Value) <= 20)
+                        {
+                            e.CellStyle.BackColor = Color.Yellow;
+                            //e.CellStyle.ForeColor = Color.Red;
+                        }
+                        //Stock menor a 10
+                        if (Convert.ToInt32(e.Value) <= 10)
+                        {
+                            e.CellStyle.BackColor = Color.Red;
+                            //e.CellStyle.ForeColor = Color.Red;
+                        }
+                    }
+                }
+            }
+            */
+
+            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "Stock")
+            {
+                try
+                {
+                    if (e.Value.GetType() != typeof(System.DBNull))
+                    {
+                        if (Convert.ToInt32(e.Value) <= 20)
+                        {
+                            e.CellStyle.BackColor = Color.Yellow;
+
+                            if (Convert.ToInt32(e.Value) <= 10)
+                            {
+                                e.CellStyle.BackColor = Color.Red;
+                            }
+                        }
+                    }
+                }
+                catch (NullReferenceException ex)
+                {
+                    MessageBox.Show("" + ex);
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+
     }
 }
