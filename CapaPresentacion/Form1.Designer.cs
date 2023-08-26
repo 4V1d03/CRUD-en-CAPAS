@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             txtnombre = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -42,159 +44,264 @@
             btnguardar = new Button();
             btneditar = new Button();
             btneliminar = new Button();
+            panel2 = new Panel();
+            label5 = new Label();
+            dataGridView1 = new DataGridView();
+            label7 = new Label();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(751, 352);
-            dataGridView1.TabIndex = 0;
-            // 
             // txtnombre
             // 
-            txtnombre.Location = new Point(881, 17);
+            txtnombre.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            txtnombre.Location = new Point(138, 51);
             txtnombre.Name = "txtnombre";
-            txtnombre.Size = new Size(271, 27);
+            txtnombre.Size = new Size(271, 29);
             txtnombre.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(808, 22);
+            label1.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(18, 60);
             label1.Name = "label1";
-            label1.Size = new Size(67, 20);
+            label1.Size = new Size(79, 20);
             label1.TabIndex = 2;
             label1.Text = "Nombre:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(786, 55);
+            label2.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(18, 97);
             label2.Name = "label2";
-            label2.Size = new Size(90, 20);
+            label2.Size = new Size(114, 20);
             label2.TabIndex = 4;
             label2.Text = "Descripcion:";
             // 
             // txtdesc
             // 
-            txtdesc.Location = new Point(881, 50);
+            txtdesc.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            txtdesc.Location = new Point(138, 89);
             txtdesc.Name = "txtdesc";
-            txtdesc.Size = new Size(271, 27);
+            txtdesc.Size = new Size(271, 29);
             txtdesc.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(825, 121);
+            label3.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(18, 173);
             label3.Name = "label3";
-            label3.Size = new Size(53, 20);
+            label3.Size = new Size(68, 20);
             label3.TabIndex = 8;
             label3.Text = "Precio:";
             // 
             // txtprecio
             // 
-            txtprecio.Location = new Point(881, 116);
+            txtprecio.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            txtprecio.Location = new Point(138, 164);
             txtprecio.Name = "txtprecio";
-            txtprecio.Size = new Size(271, 27);
+            txtprecio.Size = new Size(271, 29);
             txtprecio.TabIndex = 7;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(825, 88);
+            label4.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(18, 135);
             label4.Name = "label4";
-            label4.Size = new Size(53, 20);
+            label4.Size = new Size(69, 20);
             label4.TabIndex = 6;
             label4.Text = "Marca:";
             // 
             // txtmarca
             // 
-            txtmarca.Location = new Point(881, 83);
+            txtmarca.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            txtmarca.Location = new Point(138, 126);
             txtmarca.Name = "txtmarca";
-            txtmarca.Size = new Size(271, 27);
+            txtmarca.Size = new Size(271, 29);
             txtmarca.TabIndex = 5;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(825, 154);
+            label6.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(18, 211);
             label6.Name = "label6";
-            label6.Size = new Size(48, 20);
+            label6.Size = new Size(63, 20);
             label6.TabIndex = 10;
             label6.Text = "Stock:";
             // 
             // txtstock
             // 
-            txtstock.Location = new Point(881, 149);
+            txtstock.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            txtstock.Location = new Point(138, 202);
             txtstock.Name = "txtstock";
-            txtstock.Size = new Size(271, 27);
+            txtstock.Size = new Size(271, 29);
             txtstock.TabIndex = 9;
             // 
             // btnguardar
             // 
-            btnguardar.Location = new Point(808, 201);
+            btnguardar.BackColor = Color.Transparent;
+            btnguardar.FlatAppearance.BorderColor = Color.ForestGreen;
+            btnguardar.FlatAppearance.BorderSize = 3;
+            btnguardar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnguardar.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnguardar.FlatStyle = FlatStyle.Flat;
+            btnguardar.Font = new Font("Yet R", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnguardar.ForeColor = Color.Black;
+            btnguardar.Location = new Point(65, 268);
             btnguardar.Name = "btnguardar";
             btnguardar.Size = new Size(344, 66);
             btnguardar.TabIndex = 11;
             btnguardar.Text = "Guardar";
-            btnguardar.UseVisualStyleBackColor = true;
+            btnguardar.UseVisualStyleBackColor = false;
             btnguardar.Click += btnguardar_Click;
             // 
             // btneditar
             // 
-            btneditar.Location = new Point(808, 282);
+            btneditar.BackColor = SystemColors.MenuHighlight;
+            btneditar.FlatAppearance.BorderColor = Color.FromArgb(255, 128, 0);
+            btneditar.FlatAppearance.BorderSize = 0;
+            btneditar.FlatStyle = FlatStyle.Flat;
+            btneditar.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btneditar.ForeColor = Color.White;
+            btneditar.Location = new Point(65, 349);
             btneditar.Name = "btneditar";
             btneditar.Size = new Size(166, 48);
             btneditar.TabIndex = 12;
             btneditar.Text = "Editar";
-            btneditar.UseVisualStyleBackColor = true;
+            btneditar.UseVisualStyleBackColor = false;
             btneditar.Click += btneditar_Click;
             // 
             // btneliminar
             // 
-            btneliminar.Location = new Point(986, 282);
+            btneliminar.BackColor = SystemColors.MenuHighlight;
+            btneliminar.FlatAppearance.BorderColor = Color.Red;
+            btneliminar.FlatAppearance.BorderSize = 0;
+            btneliminar.FlatAppearance.MouseOverBackColor = Color.Red;
+            btneliminar.FlatStyle = FlatStyle.Flat;
+            btneliminar.Font = new Font("Yet R", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            btneliminar.ForeColor = Color.White;
+            btneliminar.Location = new Point(243, 349);
             btneliminar.Name = "btneliminar";
             btneliminar.Size = new Size(166, 48);
             btneliminar.TabIndex = 13;
             btneliminar.Text = "Eliminar";
-            btneliminar.UseVisualStyleBackColor = true;
+            btneliminar.UseVisualStyleBackColor = false;
             btneliminar.Click += btneliminar_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ControlLight;
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(btneliminar);
+            panel2.Controls.Add(txtnombre);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(btneditar);
+            panel2.Controls.Add(txtdesc);
+            panel2.Controls.Add(btnguardar);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(txtmarca);
+            panel2.Controls.Add(txtstock);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(txtprecio);
+            panel2.Location = new Point(780, -1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(442, 458);
+            panel2.TabIndex = 15;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Yet R", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(18, 14);
+            label5.Name = "label5";
+            label5.Size = new Size(215, 21);
+            label5.TabIndex = 14;
+            label5.Text = "Registro de Productos";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.WhiteSmoke;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = SystemColors.HotTrack;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridView1.ColumnHeadersHeight = 35;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = Color.DodgerBlue;
+            dataGridView1.Location = new Point(12, 46);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = Color.DodgerBlue;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.BackColor = Color.WhiteSmoke;
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = Color.DodgerBlue;
+            dataGridViewCellStyle6.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(751, 352);
+            dataGridView1.TabIndex = 0;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Yet R", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(12, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(205, 21);
+            label7.TabIndex = 15;
+            label7.Text = "Listado de Productos";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1179, 390);
-            Controls.Add(btneliminar);
-            Controls.Add(btneditar);
-            Controls.Add(btnguardar);
-            Controls.Add(label6);
-            Controls.Add(txtstock);
-            Controls.Add(label3);
-            Controls.Add(txtprecio);
-            Controls.Add(label4);
-            Controls.Add(txtmarca);
-            Controls.Add(label2);
-            Controls.Add(txtdesc);
-            Controls.Add(label1);
-            Controls.Add(txtnombre);
+            BackColor = Color.White;
+            ClientSize = new Size(1219, 426);
+            Controls.Add(label7);
             Controls.Add(dataGridView1);
+            Controls.Add(panel2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
         private TextBox txtnombre;
         private Label label1;
         private Label label2;
@@ -208,5 +315,9 @@
         private Button btnguardar;
         private Button btneditar;
         private Button btneliminar;
+        private Panel panel2;
+        private DataGridView dataGridView1;
+        private Label label5;
+        private Label label7;
     }
 }

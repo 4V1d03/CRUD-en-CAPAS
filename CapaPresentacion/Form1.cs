@@ -104,5 +104,6 @@ namespace CapaPresentacion
                 MessageBox.Show("seleccione una fila por favor");
             }
         }
+
     }
 }
